@@ -22,7 +22,7 @@ public class OperacoesCsv {
                     .build();
             listaJogos = csvToBean.parse();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Houve um erro no acesso ao arquivo CSV.");
         }
         return listaJogos;
     }

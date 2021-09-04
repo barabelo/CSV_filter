@@ -1,5 +1,26 @@
 package br.com.dominio.model;
 
 public enum Plataformas {
-    Wii, NES, GB, DS, X360, PS2, GBA, PS4, PS3, N3DS, N64, PS, SNES, XB, PC, A2600, PSP;
+    WII ("Wii"),
+    NES ("NES"),
+    GB ("GB"),
+    DS ("DS"),
+    X360 ("X360"),
+    PS2 ("PS2"),
+    GBA ("GBA"),
+    PS4 ("PS4"),
+    PS3 ("PS3"),
+    NINTENDO_3DS ("3DS"),
+    N64 ("N64"),
+    PS ("PS"),
+    SNES ("SNES"),
+    XB ("XB"),
+    PC ("PC"),
+    ATARI_2600 ("2600"),
+    PSP ("PSP");
+
+    private final String nomeNoCsv;
+    Plataformas(String nomeNoCsv) {
+        this.nomeNoCsv = nomeNoCsv;
+    }
 }

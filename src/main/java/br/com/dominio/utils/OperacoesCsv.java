@@ -1,4 +1,4 @@
-package br.com.dominio.service;
+package br.com.dominio.utils;
 
 import br.com.dominio.model.Jogo;
 import com.opencsv.bean.CsvToBean;

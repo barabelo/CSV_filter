@@ -19,8 +19,8 @@ public enum Plataformas {
     ATARI_2600 ("2600"),
     PSP ("PSP");
 
-    private final String nomeNoCsv;
-    Plataformas(String nomeNoCsv) {
-        this.nomeNoCsv = nomeNoCsv;
+    private final String valorNoCsv;
+    Plataformas(String valorNoCsv) {
+        this.valorNoCsv = valorNoCsv;
     }
 }

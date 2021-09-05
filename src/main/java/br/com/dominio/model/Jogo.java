@@ -1,4 +1,5 @@
 package br.com.dominio.model;
+
 import lombok.Data;
 
 @Data

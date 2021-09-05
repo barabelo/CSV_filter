@@ -1,5 +1,6 @@
 package br.com.dominio.utils;
 
+import br.com.dominio.model.Jogo;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -8,7 +9,6 @@ import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
-import br.com.dominio.model.Jogo;
 
 public class TesteOperacoesCsv {
 
@@ -21,8 +21,8 @@ public class TesteOperacoesCsv {
     }
 
     @Test
-    public void testarNumeroDeLinhas(){
-        int numLines = listaDeJogos.size();
-        Assert.assertEquals(100,numLines);
+    public void testarNumeroDeLinhas() {
+        int numLinhas = listaDeJogos.size();
+        Assert.assertEquals(100, numLinhas);
     }
 }

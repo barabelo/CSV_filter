@@ -17,7 +17,6 @@ public class ServiceGame {
     public static List<Jogo> getJogosPorPublisher(List<Jogo> jogos, Publishers publisher) {
         List<Jogo> jogosPorPublisher = jogos.stream().filter((jogo ->
                 jogo.getPublisher().equals(publisher.getValorNoCsv()))).collect(Collectors.toList());
-
         return jogosPorPublisher;
     }
 }

@@ -1,4 +1,4 @@
-package br.com.dominio.br.com.dominio.service;
+package br.com.dominio.service;
 
 import br.com.dominio.model.Jogo;
 import br.com.dominio.model.Plataformas;

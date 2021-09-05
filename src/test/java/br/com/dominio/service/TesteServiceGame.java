@@ -29,9 +29,21 @@ public class TesteServiceGame {
     }
 
     @Test
+    public void testeGetJogosAtari2600() {
+        List<Jogo> jogosAtari2600 = ServiceGame.getJogosPorPlataforma(listaDeJogos, Plataformas.ATARI_2600);
+        Assert.assertEquals(1, jogosAtari2600.size());
+    }
+
+    @Test
     public void testeGetJogosActivision() {
         List<Jogo> jogosActivision = ServiceGame.getJogosPorPublisher(listaDeJogos, Publishers.ACTIVISION);
         Assert.assertEquals(14, jogosActivision.size());
+    }
+
+    @Test
+    public void testeGetJogosTakeTwoInteractive() {
+        List<Jogo> jogosTakeTwoInteractive = ServiceGame.getJogosPorPublisher(listaDeJogos, Publishers.TAKE_TWO_INTERACTIVE);
+        Assert.assertEquals(9, jogosTakeTwoInteractive.size());
     }
 
 }
